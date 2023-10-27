@@ -1,0 +1,70 @@
+/* Mobile-First Base Styles */
+body {
+    background-color: #79c3f1; /* Background color for mobile */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: x-large;
+}
+
+form {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.5em; /* Increase font size for mobile */
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea, 
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 1.1em; /* Increase size for mobile */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Tablet and Desktop Styles */
+@media screen and (min-width: 601px) {
+    body {
+        background-color: #efea86; /* Background color for desktop */
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+
+    label {
+        margin: 0;
+        padding: 10px 0;
+        align-self: center;
+        font-size: 1.2em;
+    }
+    header{
+        font-size: large;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"], 
+    textarea, 
+    input[type="submit"] {
+        width: 80%;
+    }
+}
