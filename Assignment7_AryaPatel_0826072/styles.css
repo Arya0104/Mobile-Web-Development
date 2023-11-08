@@ -1,0 +1,80 @@
+.swiper-container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #FF5733, #FFC300);
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 20px;
+    background: #000000;
+    border: 1px solid #3d3c3c;
+    color: #fdf1f1;
+}
+
+body {
+    background: linear-gradient(to bottom, #91ff00, #7eb8c5);
+}
+
+h1 {
+    font-size: 23px;
+    color: rgb(220, 7, 7);
+    text-align: center;
+}
+
+label,
+textarea {
+    font-size: 13px;
+    color: rgb(139, 178, 61);
+}
+
+form {
+    background: linear-gradient(to bottom, #0022ff, #00FF7F);
+}
+
+h2 {
+    font-size: 18px;
+    color: rgb(238, 255, 0);
+}
+
+footer{
+    text-align: center;
+    color: rgb(182, 87, 36);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: linear-gradient(to bottom, #5b8cd6, #069999);
+    }
+form{
+    background: linear-gradient(to bottom, #708ae9, #154141);
+}
+    h1 {
+        font-size: 28px;
+        color: #0dad40;
+    }
+
+    label {
+        display: block;
+        font-size: 18px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    textarea {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+        height: auto;
+    }
+}
