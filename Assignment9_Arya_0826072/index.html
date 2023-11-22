@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive" data-offset="50">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Arya Warehouse</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#homeSection">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutSection">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Jackets
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#jacket1">Jacket#1</a>
+                    <a class="dropdown-item" href="#jacket2">Jacket#2</a>
+                    <a class="dropdown-item" href="#jacket3">Jacket#3</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<header class="bg-primary text-white text-center py-2">
+    <h1>Arya Patel</h1>
+</header>
+
+<div id="aboutSection" class="container py-4">
+    <h2>About Us</h2>
+    <p>Welcome to Arya Warehouse, your ultimate destination for the latest trends in clothing and accessories. Our store offers a unique selection of high-quality products, ranging from classic styles to contemporary fashion pieces. We pride ourselves on providing exceptional customer service and a memorable shopping experience.</p>
+    <p>At Arya Warehouse, we believe in the power of expression through fashion. Our collections are carefully curated to cater to diverse tastes and preferences. Whether you're looking for a casual outfit for everyday wear or something more formal for a special occasion, we have something to suit your needs. Shop with us and discover the joy of dressing well!</p>
+</div>
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-4" id="jacket1">
+            <div class="card">
+                <img class="card-img-top" src="image/download.jpeg" alt="Jacket#1">
+                <div class="card-body">
+                    <h5 class="card-title">Jacket#1</h5>
+                    <p class="card-text">Price - $40.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" id="jacket2">
+            <div class="card">
+                <img class="card-img-top" src="image/images (1).jpeg" alt="Jacket#2">
+                <div class="card-body">
+                    <h5 class="card-title">Jacket#2</h5>
+                    <p class="card-text">Price - $20.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" id="jacket3">
+            <div class="card">
+                <img class="card-img-top" src="image/images.jpeg" alt="Jacket#3">
+                <div class="card-body">
+                    <h5 class="card-title">Jacket#3</h5>
+                    <p class="card-text">Price - $30.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
