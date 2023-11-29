@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Display</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-12">
+                <h1>Arya</h1>
+            </div>
+        </div>
+
+        <!-- Bootstrap responsive image with caption -->
+        <div class="row">
+            <div class="col-12">
+                <img src="bird.jpg" class="img-fluid" alt="Laptop">
+                <p class="text-center">Just an exmple image added for the assignment</p>
+            </div>
+        </div>
+
+        <!-- Bootstrap table -->
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Product 1</td>
+                            <td>$100</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Product 2</td>
+                            <td>$200</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Product 3</td>
+                            <td>$300</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Bootstrap form -->
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <select class="form-control" id="productName">
+                            <option>Product 1</option>
+                            <option>Product 2</option>
+                            <option>Product 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="orderCheck">
+                        <label class="form-check-label" for="orderCheck">Would you like to order</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="productQuantity">Quantity</label>
+                        <input type="range" class="form-control-range" id="productQuantity">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
