@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya's Social Media Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 600px) {
+            .form-group {
+                display: block;
+            }
+            .form-group label, .form-group input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        .img { width: 10px;
+               height: 13px;
+            }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i> Notifications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user"></i> profile </a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <div class="container mt-4">
+        <h2 class="text-primary">SocialLink - Connect Professionally</h2>
+        <div class="alert alert-info" role="alert">
+            New job postings !!!
+        </div>
+    </div>
+
+    
+    <div class="container mt-4">
+        
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">View Modal 1</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">View Modal 2</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">View Modal 3</button>
+        
+       
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal1Label">Modal 1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="santa.jpg" alt="santa.jpg" class="santa.jpg">
+                        <p>Marry Cristmas to you and your family !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
+    <div class="container mt-4">
+        <form id="profileForm">
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="dob" class="col-sm-2 col-form-label">Date of Birth:</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="dob" name="dob" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="phone" class="col-sm-2 col-form-label">Phone Number:</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" id="phone" name="phone" required pattern="\\d{3}[\\-]\\d{3}[\\-]\\d{4}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="zipcode" class="col-sm-2 col-form-label">Zip Code:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="zipcode" name="zipcode" required pattern="[A-Za-z]\\d[A-Za-z][ -]?\\d[A-Za-z]\\d">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // jQuery 
+        $(document).ready(function () {
+            $("#profileForm").validate();
+        });
+    </script>
+</body>
+</html>
